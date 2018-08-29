@@ -7,9 +7,5 @@
 ![image](https://github.com/1996liang/project/blob/master/image/Screenshot_2018-08-29-18-04-18-850_com.tencent.mm.png)<br>
 ![image](https://github.com/1996liang/project/blob/master/image/Screenshot_2018-08-29-18-04-27-238_com.tencent.mm.png)<br>
 ![image](https://github.com/1996liang/project/blob/master/image/Screenshot_2018-08-29-18-04-41-389_com.tencent.mm.png)<br>
-![image](https://github.com/1996liang/project/blob/master/image/Screenshot_2018-08-29-18-04-45-278_com.tencent.mm.png)<br>
-![image](https://github.com/1996liang/project/blob/master/image/Screenshot_2018-08-29-18-04-51-441_com.tencent.mm.png)<br>
-![image](https://github.com/1996liang/project/blob/master/image/Screenshot_2018-08-29-18-05-00-011_com.tencent.mm.png)<br>
 ![image](https://github.com/1996liang/project/blob/master/image/Screenshot_2018-08-29-18-09-12-455_com.tencent.mm.png)<br>
-![image](https://github.com/1996liang/project/blob/master/image/无标题1.png)<br>
 ![image](https://github.com/1996liang/project/blob/master/image/无标题2.png)<br>

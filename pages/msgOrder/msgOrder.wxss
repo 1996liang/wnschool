@@ -1,0 +1,84 @@
+/* pages/msgOrder/msgOrder.wxss */
+
+page {
+  background-color: #f8f8f8;
+}
+
+.fang {
+  position: absolute;
+  top: 6%;
+  left: 9%;
+  background-color: white;
+  height: 10rpx;
+  width: 15%;
+}
+
+.element {
+  display: flex;
+  border-bottom: 2px solid #eee;
+  padding: 30rpx 0rpx 30rpx 0rpx;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.date {
+  text-align: center;
+  height: 100%;
+  width: 20%;
+}
+
+.day {
+  font-weight: bolder;
+  font-size: 44rpx;
+  color: #3d3d3d;
+}
+
+.time {
+  font-weight: bold;
+  font-size: 30rpx;
+  color: #3d3d3d;
+}
+
+.li {
+  border-radius: 50%;
+  width: 15rpx;
+  height: 15rpx;
+  background-color: #4f4f4f;
+  margin-right: 10rpx;
+}
+
+.tishi {
+  font-weight: bold;
+  font-size: 28rpx;
+  color: #a7a7a7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+
+.tishi1 {
+  width: 70%;
+}
+
+.tishi text {
+  width: 90%;
+}
+
+.body{
+  margin-bottom: 100rpx;
+}
+.buttonView{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.button{
+  background-color: #6CA9F9;
+  border-radius: 0px;
+  border: 2px solid gainsboro;
+  font-size: 35rpx;
+  color: white;
+}
+@import "/pages/util/util.wxss"

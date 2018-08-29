@@ -1,0 +1,314 @@
+/* pages/schoolcircleDetail/schoolcircleDetail.wxss */
+
+.head {
+  display: flex;
+  width: 100%;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  padding-bottom: 20rpx;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  background-color: #4999fc;
+  margin-left: 25rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.avatar image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.gender {
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  left: -2%;
+  bottom: -12%;
+}
+
+.nickName {
+  margin-left: 50rpx;
+  margin-top: 25rpx;
+}
+
+.nickName text {
+  color: #333;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.headmsg {
+  width: 80%;
+  position: relative;
+}
+
+.school {
+  margin-top: 10rpx;
+  margin-left: 40rpx;
+}
+
+.school text {
+  margin-left: 10rpx;
+  font-size: 25rpx;
+  color: #adadad;
+  font-weight: bold;
+}
+
+.content {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 10rpx;
+}
+
+.content text {
+  width: 90%;
+  font-size: 30rpx;
+  letter-spacing: 1px;
+}
+
+.images1 {
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  height: 400rpx;
+  width: 52%;
+  background-color: #adadad;
+}
+
+.images1 image {
+  height: 400rpx;
+  width: 100%;
+}
+
+.block1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images2 {
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  width: 190rpx;
+  height: 190rpx;
+  background-color: #adadad;
+}
+
+.images2 image {
+  width: 190rpx;
+  height: 190rpx;
+}
+
+.cishu {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+  /*margin-right: 10%;*/
+  margin-top: 2%;
+  padding-bottom: 2%;
+  border-bottom: 1px solid grey;
+  font-weight: bold;
+  font-size: 25rpx;
+  color: #b6adad;
+}
+
+.cishu text {
+  margin-right: 5%;
+}
+
+.block {
+  margin-bottom: 110rpx;
+  position: relative;
+}
+.tishi {
+  width: 35%;
+  background-color: #E2E2E2;
+  border-radius: 5%;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30rpx;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  right: 35%;
+}
+.title {
+  font-size: 30rpx;
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 20rpx;
+  padding-bottom: 0rpx;
+  font-weight: bold;
+}
+
+.Evaluate {
+  border-bottom: 1px solid #dcdbdb;
+  /*border-top: 1px solid #dcdbdb;*/
+  padding-bottom: 10rpx;
+  padding-top: 15rpx;
+}
+
+.EvaluateHead {
+  display: flex;
+  width: 100%;
+}
+
+.evaluateAvatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  /*background-color: #4999fc;*/
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.evaluateAvatar image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.evaluateNickName {
+  margin-left: 25rpx;
+  margin-top: 15rpx;
+}
+
+.evaluateNickName text {
+  color: #545454;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.evaluateHeadmsg {
+  width: 80%;
+  position: relative;
+}
+
+.date {
+  /*margin-top: rpx;*/
+  margin-left: 19rpx;
+}
+
+.date text {
+  margin-left: 10rpx;
+  font-size: 23rpx;
+  color: #b2b2b2;
+}
+
+.replyContentView {
+  width: 100%;
+  padding-top: 20rpx;
+  margin: 0 auto;
+  /*padding-top: 00rpx;*//*padding-bottom: 10rpx;*//*background-color: #f2f2f2;*/
+  /*display: flex;
+  justify-content: flex-end;
+  align-items: center;*/
+  /*border-bottom: 3px solid gainsboro;*/
+  
+}
+
+.replycontent {
+  width: 80%;
+  padding-top: 0rpx;
+  /*font-weight: bold;*/
+    padding-left: 17%;
+  margin: 0 auto;
+  font-size: 26rpx;
+  color: #6f6f6f;
+  /*font-weight: bold;*/
+  letter-spacing: 3px;
+}
+
+.touxian{
+   width: 80%;
+   padding-top: 15rpx;
+  font-size: 24rpx;
+  color: #B7B7B7;
+  /*font-weight: bold;*/
+    padding-left: 17%;
+  letter-spacing: 3px;
+  margin: 0 auto;
+
+}
+.buttonView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+.button {
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  background-color: white;
+  color: #888;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.return {
+  color: #6ca9f9;
+  border: 1px solid #6ca9f9;
+}
+
+.inputView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+.inputView textarea {
+  border: 1px solid gainsboro;
+  /*width: 65%;*/
+  width: 470rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.send {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  /*background-color: white;*/
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  /*margin-right: 0rpx;*/
+  width: 20%;
+  background-color: #48c23d;
+}
+
+.inputView image {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+}

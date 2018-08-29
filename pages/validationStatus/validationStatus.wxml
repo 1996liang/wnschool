@@ -1,0 +1,11 @@
+<!--pages/validationStatus/validationStatus.wxml-->
+<view class="bigView">
+  <icon type="{{iconType}}" size="60" />
+  <text class="title">{{title}}</text>
+  <text>{{content}}</text>
+  <!--<button type="primary" bindtap="redirect"></button>-->
+  <view class="buttonView" hidden="{{buttonViewHide}}" animation="{{animationData}}">
+    <button class="button" bindtap="return1">返回</button>
+    <button class="button zhuyao"  bindtap="redirect">{{button}}</button>
+  </view>
+</view>

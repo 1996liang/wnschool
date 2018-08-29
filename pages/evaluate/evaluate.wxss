@@ -1,0 +1,69 @@
+/* pages/evaluate/evaluate.wxss */
+page{
+  margin:0 auto;
+  text-align: center;
+  background-color: #F8F8F8;
+}
+.big{
+  margin-top: 100rpx;
+}
+.zi{
+  color: #D4D8DC;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-bottom: 25rpx;
+  letter-spacing: 3rpx;
+}
+.zi1{
+  color: #D4D8DC;
+  font-size: 23rpx;
+  font-weight: bold;
+  margin-top: 20rpx;
+}
+.zi1 text{
+  letter-spacing: 4rpx;
+}
+.star{
+  margin-bottom: 35rpx;
+}
+image{
+  width:100rpx;
+  padding: 0px 7rpx 0px 7rpx;
+  height:100rpx;
+}
+textarea{
+    width: 100%;
+    height:600rpx;
+}
+.edit{
+  margin: 0 auto;
+  padding: 25rpx;
+  background-color:white; 
+  border: 2px solid #C7C7C7;
+  width: 60%;
+}
+.btnView{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    font-size: 35rpx;
+    border-radius: 0px;
+}
+.btnView .cancel{
+    width: 30%;
+    border-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 5rpx;
+    font-weight: 600;
+    border: 1px solid #C9C9C9;
+}
+.btnView .send{
+    width:70%;
+    border-radius: 0px;
+    padding: 5rpx;
+    background-color: #418DEB;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #C9C9C9;
+}

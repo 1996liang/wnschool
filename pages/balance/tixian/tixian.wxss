@@ -1,0 +1,76 @@
+page {
+  /*background-color: #f9f9f9;*/
+}
+
+.table {
+  width: 90%;
+  border-radius: 5%;
+  background-color: white;
+  margin: 0 auto;
+  margin-top: 30rpx;
+  border: 3px solid #f9f9f9;
+}
+
+.type1 {
+  width: 100%;
+  margin: 0 auto;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+.typeText {
+  font-size: 35rpx;
+  color:#000000;
+  padding-left: 50rpx;
+}
+
+.typeText1 {
+  font-size: 35rpx;
+  color: #000000;
+  padding-left: 50rpx;
+  /*margin-top: 50rpx;*/
+}
+.typeText1 {
+  font-size: 35rpx;
+  color: #000000;
+  padding-left: 50rpx;
+  font-weight:bold;
+}
+.money{
+  margin-top: 30rpx;
+}
+.money .i {
+  height: 150rpx;
+  font-size:45rpx;
+  /*border-bottom: 1px solid #f9f9f9;*/
+  padding-left: 35rpx;
+}
+
+.moneyInput {
+  width: 85%;
+  margin: 0 auto;
+  height: 150rpx;
+  padding-left: 45rpx;
+  font-size: 70rpx;
+  border-bottom: 1px solid #DDDDDD;
+}
+
+.text1{
+  padding-top: 30rpx;
+  padding-bottom:30rpx;
+  padding-left: 50rpx;
+  width: 90%;
+  color: #898989;
+  margin: 0 auto;
+  font-size: 27rpx;
+}
+button{
+  width: 90%;
+  margin-top: 100rpx;
+}
+.quanbu{
+  color: #0A0AAE;
+  font-weight: bold;
+}

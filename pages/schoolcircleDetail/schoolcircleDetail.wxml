@@ -1,0 +1,76 @@
+<!--pages/schoolcircleDetail/schoolcircleDetail.wxml-->
+<view>
+  <view class="head">
+    <view class="avatar" bindtap="personal">
+      <image src="{{item.userAvatarUrl}}" />
+    </view>
+    <view class="headmsg">
+      <view class="nickName">
+        <text>{{item.userNickName}}</text>
+      </view>
+      <image src="/image/icon/boy.png" class="gender" />
+      <view class="school">
+        <text>{{item.schoolCreateTime}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="content">
+    <text>{{item.schoolContent}}</text>
+    <view class="images1" hidden="{{item.isOneImages}}">
+      <image src="{{item.imagesOne}}" bindtap="yulan" mode="aspectFill" data-url="{{item.imagesOne}}"></image>
+    </view>
+    <view class="block1" hidden="{{item.isManyImages}}">
+      <block wx:for="{{item.schoolImages}}">
+        <view class="images2">
+          <image src="{{item}}" bindtap="yulan" mode="aspectFill" data-url="{{item}}"></image>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="cishu">
+    <!--<text>浏览52次</text>-->
+  </view>
+  <view class="title">
+    回复信息
+  </view>
+  <view class="block">
+    <block wx:for="{{replyData.comment}}">
+      <view class="Evaluate" bindtap="replyPerson" data-louId="{{index}}">
+        <view class="EvaluateHead">
+          <view class="evaluateAvatar" bindtap="personal">
+            <image src="{{item[7]}}" />
+          </view>
+          <view class="evaluateHeadmsg">
+            <view class="evaluateNickName">
+              <text>{{item[6]}}</text>
+            </view>
+            <view class="date">
+              <text>{{item[3]}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="replyContentView">
+          <view class="replycontent">
+            <text>{{item[2]}}</text>
+          </view>
+          <view class="touxian">
+            <text hidden="{{item[10]}}">回复 </text>
+            <text>{{item[5]}} </text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="tishi" class="tishi" hidden="{{hiddent}}" animation="{{animation1}}">
+    <text>{{tishi}}</text>
+  </view>
+  <view class="inputView" hidden="{{inputViewHide}}" animation="{{animationData}}">
+    <image src="/image/icon/houtui.png" bindtap="question"></image>
+    <textarea auto-height bindinput="getInput" placeholder="{{holder}}" value="{{input}}"  placeholder-style="font-size:28rpx;"/>
+    <button class="send" bindtap="send">回复</button>
+  </view>
+  <view class="buttonView" hidden="{{buttonViewHide}}" animation="{{animationData}}">
+    <button class="button" bindtap="question">回复</button>
+    <button class="button return" bindtap="return1">返回</button>
+  </view>
+</view>

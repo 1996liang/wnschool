@@ -1,0 +1,375 @@
+/* pages/orderDetail/orderDetail.wxss */
+
+.head {
+  display: flex;
+  width: 100%;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #4999fc;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.avatar image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nickName {
+  margin-left: 60rpx;
+  margin-top: 25rpx;
+}
+
+.nickName text {
+  color: #333;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.headmsg {
+  width: 80%;
+  position: relative;
+}
+
+.school {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+
+.two {
+  display: flex;
+}
+
+.school image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 5rpx;
+}
+
+.school text {
+  margin-left: 10rpx;
+  font-size: 25rpx;
+  color: #5e5e5e;
+}
+
+.date {
+  position: absolute;
+  right: 3%;
+  bottom: 0%;
+  font-size: 25rpx;
+  font-weight: bold;
+  color: #c9c9c9;
+}
+
+.contentView {
+  width: 100%;
+  margin-top: 15rpx;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 3px solid gainsboro;
+}
+
+.content {
+  width: 90%;
+  font-size: 32rpx;
+  color: #0b1420;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.orderYaoQiu {
+  width: 97%;
+  height: 80rpx;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30rpx;
+  margin-top: 15rpx;
+}
+
+.orderYaoQiu text {
+  margin-left: 50rpx;
+  font-weight: bold;
+  color: #595959;
+}
+
+.msg {
+  width: 97%;
+  font-size: 26rpx;
+  color: #7c7c7c;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.line {
+  border-bottom: 1px solid #c9c9c9;
+  padding-bottom: 10rpx;
+}
+
+.msg view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60rpx;
+}
+
+.msg view text {
+  margin-right: 35rpx;
+}
+
+.money {
+  width: 97%;
+  height: 80rpx;
+  background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  font-size: 35rpx;
+  margin-top: 15rpx;
+}
+
+.money text {
+  margin-left: 20rpx;
+  font-weight: bold;
+  margin-right: 35rpx;
+  color: #595959;
+}
+
+.money .moneyText {
+  color: #d25720;
+}
+
+.money view{
+  display: flex;
+  align-items: center;
+}
+.money image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 20rpx;
+}
+.jianjiaoView {
+  width: 97%;
+  border-bottom: 2px solid #cdcdcd;
+  position: relative;
+  margin: 0 auto;
+}
+
+.jianjiao {
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid white;
+  border-right: 20rpx solid white;
+  border-bottom: 20rpx solid #cdcdcd;
+  border-left: 20rpx solid white;
+  margin-left: 80%;
+}
+/*.jianjiao:before{
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid white;
+  border-right: 20rpx solid white;
+  border-bottom: 20rpx solid #cdcdcd;
+  border-left: 20rpx solid white;
+  margin-left: 80%;
+}
+.jianjiao:after{
+ width: 0;
+  height: 0;
+  border-top: 20rpx solid white;
+  border-right: 20rpx solid white;
+  border-bottom: 20rpx solid white;
+  border-left: 20rpx solid white;
+  margin-left: 80%;
+}*/
+/*.jianjiao1{
+   width: 0;
+  height: 0;
+  border-top: 18rpx solid white;
+  border-right: 18rpx solid white;
+  border-bottom: 18rpx solid white;
+  border-left: 18rpx solid white;
+  position: absolute;
+  top:100%;
+  left: 80%;
+}*/
+
+.replyView {
+  margin-bottom: 130rpx;
+  border-top: 3px solid #e8e8e8;
+  margin-top: 10rpx;
+}
+
+.replyAvatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+  background-color: #4999fc;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.replyAvatar image {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 50%;
+}
+
+.reply {
+  display: flex;
+  margin-top: 20rpx;
+  padding-bottom: 10rpx;
+  border-bottom: 1px solid gainsboro;
+}
+
+.replyHeadmsg .replyNickName {
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+
+.replyHeadmsg .replyNickName text {
+  color: #000;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.replyHeadmsg {
+  width: 80%;
+  position: relative;
+}
+
+.replyHeadmsg .replyDate {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  font-size: 25rpx;
+  /*font-weight: bold;*/
+  color: #B7B7B7;
+}
+
+.replyContentView {
+  width: 100%;
+  margin-top: 25rpx;
+  /*padding-top: 00rpx;*//*padding-bottom: 10rpx;*//*background-color: #f2f2f2;*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*border-bottom: 3px solid gainsboro;*/
+}
+
+.replyContent {
+  width: 90%;
+  font-size: 26rpx;
+  /*font-weight: bold;*/
+  letter-spacing: 3px;
+}
+
+.touxian{
+   width: 90%;
+  font-size: 24rpx;
+  color: #B7B7B7;
+  /*font-weight: bold;*/
+  letter-spacing: 3px;
+  padding-top: 30rpx;
+  margin: 0 auto;
+  /*margin-bottom: -15rpx;*/
+
+}
+.buttonView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+.button {
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  background-color: white;
+  color: #888;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.loot {
+  color: #6ca9f9;
+  border: 1px solid #6ca9f9;
+}
+
+.inputView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+.inputView textarea {
+  border: 1px solid gainsboro;
+  /*width: 65%;*/
+  width: 470rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+.send {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  /*background-color: white;*/
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  /*margin-right: 0rpx;*/
+  width: 20%;
+  background-color: #48C23D;
+}
+.inputView image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+}
+.tishi {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  background-color: #E2E2E2;
+  border-radius: 5%;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30rpx;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  right: 35%;
+}

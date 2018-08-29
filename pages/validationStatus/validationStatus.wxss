@@ -1,0 +1,47 @@
+/* pages/validationStatus/validationStatus.wxss */
+page{
+  text-align: center; 
+  margin-top: 250rpx;
+}
+.bigView{
+  display: flex;
+  flex-direction: column;
+}
+.title{
+    font-size: 33rpx;
+  font-weight: bold;
+}
+text{
+  margin-top: 40rpx;
+  font-size: 28rpx;
+  line-height: 200%;
+}
+.buttonView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+.button {
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  background-color: white;
+  color: #888;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+.zhuyao{
+    color: #6ca9f9;
+  border: 1px solid #6ca9f9;
+}

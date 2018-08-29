@@ -1,0 +1,17 @@
+<!--pages/phoneNumber/phoneNumber.wxml-->
+<view class="bigView">
+  <view class="content">
+    <view class="textView">
+      <text class="text">请验证您的手机号码。</text>
+    </view>
+    <input type="number" placeholder="请在此处输入您的手机号码" maxlength="11" class="phoneNumber" placeholder-class="phoneNumber1" bindblur="getInput" />
+    <view class="idCode">
+      <input type="number" maxlength="6" bindblur="getRandom" />
+      <button bindtap="idCode" disabled="{{disabled}}">{{daojishi}}</button>
+    </view>
+  </view>
+  <view class="tishi" class="tishi" hidden="{{hiddent}}" animation="{{animationData}}">
+    <text>{{tishi}}</text>
+  </view>
+  <button class="confirm" bindtap="confirm">确定</button>
+</view>

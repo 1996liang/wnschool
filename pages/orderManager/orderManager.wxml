@@ -1,0 +1,72 @@
+
+<import src="/pages/util/util.wxml" />
+<view hidden="{{personal}}">
+  <template is="personal" data="{{userInfo}}"></template>
+</view>
+<view>
+  <view>
+<scroll-view class="scroll_view_horizotal" scroll-x scroll-with-animation="true">
+    <view id="item" class="item" style="{{quanbu}};" catchtap="item" data-item="quanbu">
+      <!--<text style="border-bottom: 3px solid #62a5f7;color:#62a5f7;font-weight:bold;" class="item">全部</text>-->
+      全部
+    </view>
+    <view id="item" class="item" style="{{send}};" catchtap="item" data-item="send">发布的单</view>
+     <view id="item" class="item"  style="{{end}}; "catchtap="item" data-item="end">接过的单</view>
+    <view id="item" class="item"  style="{{daiban}};" catchtap="item" data-item="daiban">待办</view>
+    <view id="item" class="item"  style="{{daiwancheng}};" catchtap="item" data-item="daiwancheng">待完成</view>
+    <view id="item" class="item"  style="{{daipingjia}};" catchtap="item" data-item="daipingjia">待评价</view>
+</scroll-view>
+</view>
+  <block wx:for="{{data}}">
+    <view class="titleHead">
+      <text class="orderType">{{item[0].orderType}}</text>
+      <image src="/image/icon/cancel.png" hidden="{{item[2].cancel}}" bindtap="cancel" data-index="{{index}}"></image>
+    </view>
+    <view class="element">
+      <view class="head">
+        <view class="avatar" bindtap="personal">
+          <image src="{{item[1].avatarUrl}}" />
+        </view>
+        <view class="nickName">
+          <text>{{item[1].nickName}}</text>
+        </view>
+      </view>
+      <view class="msg">
+        <view class="content">
+          <text>{{item[0].content}}</text>
+        </view>
+      </view>
+      <view class="date">
+        <text>{{item[0].finishTime}}</text>
+      </view>
+      <view class="status">
+        <text>{{item[0].status}}</text>
+      </view>
+    </view>
+    <view class="moneyView">
+      <view>
+      <text class="xingshi">{{item[2].shenfen}}</text>
+        <text>金额:{{item[0].money}}元</text>
+      </view>
+    </view>
+    <!--<view class="buttonView">
+      <view>
+        <button hidden="{{item.evaluate}}" bindtap="evaluate" data-id="{{item.id}}">评价</button>
+        <button class="complate" bindtap="detail" data-id="{{item.id}}" style="{{item.ciyao}}">查看详情</button>
+        <button class="complate" hidden="{{item.jiedan}}" bindtap="jiedan" data-id="{{item.lootPerson}}"  data-orderid="{{item.id}}" style="{{item.ciyao}}">查看接单人</button>
+        <button class="complate" hidden="{{item.fadan}}" bindtap="fadan" data-id="{{item.id}}" style="{{item.ciyao}}">查看订单隐私</button>
+        <button class="complate" hidden="{{item.complete}}" bindtap="complete" data-id="{{item.id}}">完成订单</button>
+      </view>
+    </view>-->
+    <view class="buttonView">
+     <button class="button {{item[2].evaluate.zhuyao}}" hidden="{{item[2].evaluate.hidden}}" bindtap="evaluate" data-orderId="{{item[0].id}}" data-lootUserId="{{item[0].lootPerson}}">评价</button>
+        <button class="button {{item[2].complete.zhuyao}}" hidden="{{item[2].complete.hidden}}" bindtap="complete" data-index="{{index}}">完成订单</button>
+        <button class="button " bindtap="detail" data-id="{{item[0].id}}">查看详情</button>
+        <button class="button {{item[2].jiedan.zhuyao}}" hidden="{{item[2].jiedan.hidden}}" bindtap="jiedan" data-id="{{item[0].lootPerson}}"  data-orderid="{{item[0].id}}">查看接单人</button>
+        <button class="button {{item[2].fadan.zhuyao}}" hidden="{{item[2].fadan.hidden}}" bindtap="fadan" data-id="{{item[0].id}}">查看订单隐私</button>
+      <!--<button class="button">询问</button>
+      <button class="button return">返回</button>-->
+  </view>
+  </block>
+
+</view>

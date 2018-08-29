@@ -1,0 +1,25 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class="big">
+  <view class="zi">
+    <text>你对抢单人的服务满意吗？\n</text>
+  </view>
+  <!--<image src="/image/图标/评价-点亮.png"></image>-->
+  <view class="star">
+     <block wx:for="{{lightCycle}}">
+      <image src="{{starLightImage}}" bindtap="star" data-star="light-{{index}}"></image>
+    </block>
+    <block wx:for="{{emptyCycle}}">
+      <image src="{{starImage}}" bindtap="star" data-star="empty-{{index}}"></image>
+    </block>
+  </view>
+  <view class="edit">
+    <textarea bindinput="getInnput"/>
+  </view>
+  <view class="zi1">
+    <text>你的评价就是对抢单人的肯定\n</text>
+  </view>
+  <view class="btnView">
+    <button class="cancel">取消</button>
+    <button class="send" bindtap="send">确定</button>
+  </view>
+</view>

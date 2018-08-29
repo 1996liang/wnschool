@@ -1,0 +1,14 @@
+<!--pages/selectSchool/selectSchool.wxml-->
+<view class="mengban" bindtap="exit">
+  </view>
+  <view class="selectSchool">
+    <image src="/image/icon/school1.png"></image>
+    <text>请选择你的学校</text>
+    <input type="text" bindinput="getMsg" value="{{value}}" />
+    <scroll-view scroll-y class="scroll" hidden="{{selectSchoolHidden}}">
+      <block wx:for="{{schoolData}}">
+        <view class="input" bindtap="getValue" data-index="{{index}}">{{item}}</view>
+      </block>
+    </scroll-view>
+    <button type="primary" bindtap="send">确定</button>
+  </view>

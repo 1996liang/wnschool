@@ -1,0 +1,47 @@
+<import src="/pages/util/util.wxml" />
+<view hidden="{{personal2}}">
+  <template is="personal2" data="{{schoolCircle}}"></template>
+</view>
+<view>
+  <view class="slide">
+  </view>
+  <block wx:for="{{data}}">
+    <view class="element" bindtap="detail" data-item="{{item}}">
+      <view class="avatar" catchtap="personal2" data-nickName="{{item.userNickName}}" data-avatarUrl="{{item.user.avatarUrl}}" data-school="{{item.user.school}}">
+        <image src="{{item.userAvatarUrl}}" />
+      </view>
+      <view class="msg">
+        <view>
+          <text class="nickName">{{item.userNickName}}</text>
+        </view>
+        <view>
+          <text class="content">{{item.schoolContent}}</text>
+        </view>
+        <view class="imgs" hidden="{{item.isOneImages}}">
+          <image src="{{item.imagesOne}}" bindtap="yulan" mode="aspectFill"></image>
+        </view>
+        <view class="block1" hidden="{{item.isManyImages}}">
+          <block wx:for="{{item.schoolImages}}">
+            <view class="images2">
+              <image src="{{item}}" bindtap="yulan" mode="aspectFill"></image>
+            </view>
+          </block>
+        </view>
+        <view class="viewDate">
+          <text class="date">{{item.schoolCreateTime}}</text>
+        </view>
+        <!--<view class="fang">
+          <image src="/image/icon/float.png"></image>
+        </view>-->
+      </view>
+    </view>
+  </block>
+  <view class="edit" bindtap="submitSchoolCircle">
+    <image src="/image/icon/edit.png" />
+  </view>
+  <view hidden="{{tishi}}" class="tishiView">
+    <text class="tishi">
+        {{tishiText}}
+    </text>
+  </view>
+</view>

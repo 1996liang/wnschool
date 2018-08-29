@@ -1,0 +1,23 @@
+<import src="/pages/util/util.wxml"/>
+<template is="tabBar"></template>
+<view class="fang"></view>
+<view class="body">
+  <block wx:for="{{msg}}">
+    <view class="xuanxiang" bindtap="tiaozhuan" data-index="{{index}}">
+      <view class="avatarUrl">
+        <image src="{{item.avatarUrl}}"></image>
+      </view>
+      <view class="msgView">
+        <text class="title">{{item.nickName}}\n</text>
+        <text class="content">{{item.content}}</text>
+      </view>
+      <view class="dateView">
+        <text class="minute">{{item.createTime}}</text>
+      </view>
+    </view>
+  </block>
+    <view class="buttonView">
+      <button class="button" bindtap="return1">返回</button>
+  </view>
+</view>
+

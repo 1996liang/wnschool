@@ -1,0 +1,327 @@
+/* pages/orderLootPrivate/orderLootPrivate.wxss */
+
+.head {
+  display: flex;
+  width: 100%;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #4999fc;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.avatar image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nickName {
+  margin-left: 30rpx;
+  margin-top: 25rpx;
+}
+
+.nickName text {
+  color: #333;
+  font-size: 33rpx;
+  font-weight: bold;
+}
+
+.headmsg {
+  width: 80%;
+  position: relative;
+}
+
+.school {
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+}
+
+.school image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 5rpx;
+}
+
+.school text {
+  margin-left: 10rpx;
+  font-size: 25rpx;
+  color: #5e5e5e;
+}
+
+.msg {
+  width: 100%;
+  font-size: 32rpx;
+  color: #7c7c7c;
+  font-weight: bold;
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.msg view {
+  width: 95%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60rpx;
+  margin: 0 auto;
+}
+
+.msg .first {
+  width: 100%;
+  border-top: 1px solid #c9c9c9;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.msg .first text {
+  margin-right: 35rpx;
+  margin-left: 35rpx;
+}
+
+.line {
+  border-top: 1px solid #c9c9c9;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  /*border-bottom: 3px solid #c9c9c9;*/
+}
+
+.msg .jiange {
+  width: 100%;
+  height: 20rpx;
+  background-color: #f2f2f2;
+}
+
+.msg view text {
+  margin-right: 15rpx;
+  margin-left: 15rpx;
+}
+
+.line1 {
+  border-bottom: 1px solid #c9c9c9;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  display: flex;
+  justify-content: space-between;
+  /*border-bottom: 3px solid #c9c9c9;*/
+}
+
+.line1 button{
+  /*width: 10%;*/
+  margin-left: 0;
+  margin-right: 0;
+  font-size: 28rpx;
+    color: #8888A5;
+}
+.evaluate {
+  color: #505050;
+  font-size: 40rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.value {
+  color: #505050;
+  font-size: 35rpx;
+}
+
+.jiantou {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 10rpx;
+}
+
+.reply{
+  height: 80rpx;
+  border-bottom:1px solid #c9c9c9; 
+  display: flex;
+  align-items: center;
+  position: relative;
+  text-align: center;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.reply view{
+  height: 1px;
+  background-color:#DDDDDD; 
+  width: 50%;
+  margin: 0 auto;
+}
+.reply text{
+  position: absolute;
+  right: 40%;
+  left: 40%;
+  font-size: 38rpx;
+  color: #90B6E4;
+  background-color: white;
+  font-weight: bold;
+}
+
+.qiaoqiaohua {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 2%;
+  padding: 25rpx;
+  /*margin-top: 2%;*/
+  /*margin-bottom: 20%;*/
+  display: flex;
+  align-items: center;
+}
+
+.qiaoqiaohua .avatarUrl {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #6ca9f9;
+  border-radius: 50%;
+}
+
+.qiaoqiaohua .avatarUrl image {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #6ca9f9;
+  border-radius: 50%;
+}
+
+.woqiaoqiaohua {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 2%;
+  padding: 25rpx;
+  /*margin-top: 2%;*/
+  /*margin-bottom: 20%;*/
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.woqiaoqiaohua .avatarUrl {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #6ca9f9;
+  border-radius: 50%;
+}
+
+.woqiaoqiaohua .avatarUrl image {
+  width: 90rpx;
+  height: 90rpx;
+  background-color: #6ca9f9;
+  border-radius: 50%;
+}
+.jianjiao1 {
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid white;
+  border-right: 20rpx solid white;
+  border-bottom: 20rpx solid white;
+  border-left: 20rpx solid #6ca9f9;
+}
+
+.talk{
+  margin-bottom: 20%;
+}
+.yuju {
+  background-color: #6ca9f9;
+  padding: 15rpx;
+  color: white;
+  /*width: 60%;*/
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  border-radius: 5px;
+  font-size: 28rpx;
+  letter-spacing: 1px;
+}
+
+
+.gender{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  left: -5%;
+  bottom: -7%;
+}
+.jianjiao {
+  width: 0;
+  height: 0;
+  border-top: 20rpx solid white;
+  border-right: 20rpx solid #6ca9f9;
+  border-bottom: 20rpx solid white;
+  border-left: 20rpx solid white;
+}
+.buttonView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+.button {
+  padding-left: 35rpx;
+  padding-right: 35rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  background-color: white;
+  color: #888;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.return {
+  color: #6ca9f9;
+  border: 1px solid #6ca9f9;
+}
+
+.inputView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+
+.inputView textarea {
+  border: 1px solid gainsboro;
+  /*width: 65%;*/
+  width: 470rpx;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
+}
+
+
+.send {
+  padding-left: 40rpx;
+  padding-right: 40rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  /*background-color: white;*/
+  color: white;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  /*margin-right: 0rpx;*/
+  width: 20%;
+  background-color: #48C23D;
+}
+.inputView image{
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 10rpx;
+}

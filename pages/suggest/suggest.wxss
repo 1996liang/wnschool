@@ -1,0 +1,55 @@
+page{
+    background-color: #F8F8F8;
+    margin-top:70rpx; 
+    margin-bottom: 150rpx;
+}
+.areaView{
+    height:20rem;
+    border: 2px solid #DCDCDC;
+    margin: 0 auto;
+    width: 13rem;
+    background-color: white;
+}
+.textarea{
+    height: 18rem;
+    background-color: white;
+    width: 85%;
+    padding: 25rpx 0rpx 0rpx 30rpx;
+}
+.textView{
+    margin-top: 50rpx;
+   text-align: center;
+    width: 100%;
+     
+}
+.text{
+    font-size: 23rpx;
+    letter-spacing: 0.3px;
+    color: #B8B8B8;
+    font-weight: 600;
+}
+.btnView{
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    width: 100%;
+    font-size: 35rpx;
+    border-radius: 0px;
+}
+.btnView .cancel{
+    width: 30%;
+    border-radius: 0px;
+    border-bottom-right-radius: 0px;
+    padding: 5rpx;
+    font-weight: 600;
+    border: 1px solid #C9C9C9;
+}
+.btnView .send{
+    width:70%;
+    border-radius: 0px;
+    padding: 5rpx;
+    background-color: #418DEB;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #C9C9C9;
+}

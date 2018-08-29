@@ -1,0 +1,73 @@
+page {
+  background-color: #f8f8f8;
+}
+
+.fang {
+  position: absolute;
+  top: 6%;
+  right: 9%;
+  background-color: white;
+  height: 10rpx;
+  width: 15%;
+}
+.xuanxiang {
+  display: flex;
+  padding-top: 30rpx;
+  /*align-items: center;*/
+  /*height: 100rpx;*/
+  position: relative;
+}
+.avatarUrl {
+  border-radius: 50%;
+  height: 90rpx;
+  width: 90rpx;
+  background-color: #438aca;
+  border: 2px solid #e2e2e2;
+  margin-left: 25rpx;
+}
+.avatarUrl image{
+  width: 90rpx;
+  height: 90rpx;
+    border-radius: 50%;
+}
+.msgView {
+  padding-left: 40rpx;
+  width: 70%;
+}
+.title {
+  font-size: 32rpx;
+  font-weight: 800;
+}
+
+.msgView .content {
+  font-size: 27rpx;
+  font-weight: 500;
+  color: #acacac;
+  /*width: 10%;*/
+}
+.dateView {
+  margin-left: 50rpx;
+  position: absolute;
+  right: 10%;
+}
+.minute {
+  font-size: 25rpx;
+  color: #acacac;
+}
+
+.body{
+  margin-bottom: 100rpx;
+}
+.buttonView{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.button{
+  background-color: #6CA9F9;
+  border-radius: 0px;
+  border: 2px solid gainsboro;
+  font-size: 35rpx;
+  color: white;
+}
+@import "/pages/util/util.wxss"

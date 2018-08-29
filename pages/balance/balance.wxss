@@ -1,0 +1,93 @@
+page {
+  background-color: #f8f8f8;
+}
+
+.head {
+  background-color: #ededed;
+  height: 250rpx;
+  border-bottom: 4px solid #e2e2e2;
+  position: relative;
+}
+.head view{
+  font-size: 100rpx;
+  position: absolute;
+  color: #F15354;
+  right: 10%;
+  bottom: 10%;
+  font-weight: bold;
+}
+.xuanxiang {
+  display: flex;
+  padding-top: 50rpx;
+  align-items: center;
+  height: 100rpx;
+}
+
+.dateView {
+  margin-left: 50rpx;
+}
+
+.day {
+  font-size: 35rpx;
+  font-weight: 600;
+}
+
+
+.minute {
+  font-size: 25rpx;
+}
+
+.body{
+ margin-bottom: 180rpx;
+}
+
+.avatarUrl {
+  border-radius: 50%;
+  height: 90rpx;
+  width: 90rpx;
+  background-color: #438aca;
+  border: 2px solid #e2e2e2;
+  margin-left: 25rpx;
+}
+.avatarUrl image{
+    height: 90rpx;
+  width: 90rpx;
+    border-radius: 50%;
+}
+
+.money {
+  font-size: 50rpx;
+  font-weight: 800;
+}
+
+.msg {
+  font-size: 9.5pt;
+  font-weight: 500;
+  color: #acacac;
+}
+
+.msgView {
+  padding-left: 40rpx;
+}
+
+.btn {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+}
+
+.deposit {
+  border-radius: 0px;
+  border: 2px solid #e2e2e2;
+  width: 70%;
+  color: white;
+  background-color: #4999fc;
+}
+
+.return {
+  border-radius: 0px;
+  border: 2px solid #e2e2e2;
+  width: 30%;
+  background-color: #F8F8F8;
+}

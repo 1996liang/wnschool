@@ -1,0 +1,94 @@
+page{
+    background-color: white;
+}
+.head{
+    padding-top: 100rpx;
+    background-color: white;
+}
+.anView{
+    text-align: center;
+}
+.avatarUrlView{
+    margin: 0 auto;
+    background-color: #019FE9;
+    border-radius: 50%;
+    height: 150rpx;
+    width: 150rpx;
+    border: 2px solid #BCBCBC;
+    margin-bottom:0rpx; 
+}
+.avatarUrlView image{
+      border-radius: 50%;
+    height: 150rpx;
+    width: 150rpx;
+
+}
+.nickName{
+    font-size: 40rpx;
+    font-weight: 600;
+}
+.msg{
+    text-align: center;
+    display: flex;
+    margin-top: 50rpx;
+    padding-bottom: 15rpx;
+    border-bottom: 2px solid gainsboro;
+}
+.msg view{
+    width: 33%;
+}
+.number{
+    font-size: 27rpx;
+    color: #3DBEFA;
+    padding-bottom: 5rpx;
+}
+.zi{
+    font-size: 33rpx;
+    font-weight: 800;
+    color: #5F5F5F;
+}
+.xuanxiang{
+    display: flex;
+    height: 100rpx;
+    align-items: center;
+    border-bottom: 2px solid #E9E9E9;
+    /*padding-left: 40rpx;*/
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.xuanxiang text{
+    padding-left: 40rpx;
+    font-size: 30rpx;
+    font-weight: bold;
+    color: #414141;
+}
+.images{
+   margin-left: 5%;
+    border-radius: 0px;
+    width: 45rpx;
+    height: 45rpx;
+    /*background-color: #888888;*/
+}
+.jiantou{
+    height: 35rpx;
+    width: 35rpx;
+    position: absolute;
+    right: 30rpx;
+}
+image{
+    width:45rpx;
+    height: 45rpx;
+}
+.contact{
+  width: 120rpx;
+  height: 70rpx;
+  position: fixed;
+  bottom: 10%;
+  right: 0%;
+  background-color: #48C23D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7% 0% 0% 7%;
+}

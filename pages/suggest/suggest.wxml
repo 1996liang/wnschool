@@ -1,0 +1,14 @@
+<view>
+  <view class="areaView">
+    <textarea class="textarea" maxlength="300"/>
+  </view>
+  <view class="textView">
+    <text class="text">我们会根据您的意见对服务做进一步的改造优化 
+      感谢您的支持
+    </text>
+  </view>
+  <view class="btnView">
+    <button class="cancel">取消</button>
+    <button class="send">提交意见</button>
+  </view>
+</view>

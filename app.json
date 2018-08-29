@@ -1,0 +1,60 @@
+{
+  "pages": [
+    "pages/run/run",
+    "pages/selectSchool/selectSchool",
+    "pages/submitOrder/submitOrder",
+    "pages/orderManager/orderManager",
+    "pages/msgSchool/msgSchool",
+    "pages/submitOrderMsg/submitOrderMsg",
+    "pages/phoneNumber/phoneNumber",
+    "pages/schoolcircle/schoolcircle",
+        "pages/balance/balance",
+    "pages/msgWallet/msgWallet",
+    "pages/orderDetail/orderDetail",
+    "pages/privateOrder/privateOrder",
+    "pages/orderLootPrivate/orderLootPrivate",
+    "pages/util/util",
+    "pages/validationStatus/validationStatus",
+    "pages/validationImage/validationImage",
+    "pages/validation/validation",
+    "pages/shenfenValidation/shenfenValidation",
+    "pages/msgOrder/msgOrder",
+    "pages/my/my",
+      "pages/balance/tixian/tixian",
+    "pages/orderLootEvaluate/orderLootEvaluate",
+    "pages/schoolcircleDetail/schoolcircleDetail",
+    "pages/guanyuwomen/guanyuwomen",
+    "pages/evaluate/evaluate",
+    "pages/suggest/suggest",
+    "pages/submitSchoolCircle/submitSchoolCircle"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#58ABDF",
+    "navigationBarTitleText": "万能校园",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#418DEB",
+    "list": [
+      {
+        "pagePath": "pages/run/run",
+        "text": "跑腿",
+        "iconPath": "/image/icon/跑腿团.png",
+        "selectedIconPath": "/image/icon/跑腿团(1).png"
+      },
+      {
+        "pagePath": "pages/schoolcircle/schoolcircle",
+        "text": "校圈",
+        "iconPath": "/image/icon/圈.png",
+        "selectedIconPath": "/image/icon/圈(1).png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我",
+        "iconPath": "/image/icon/我.png",
+        "selectedIconPath": "/image/icon/我(1).png"
+      }
+    ]
+  }
+}

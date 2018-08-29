@@ -1,0 +1,24 @@
+/* pages/guanyuwomen/guanyuwomen.wxss */
+.head image{
+  width: 450rpx;
+  height: 450rpx;
+}
+.head{
+  background-color: #58ABDF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.buttonView{
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.button{
+  background-color: #6CA9F9;
+  border-radius: 0px;
+  border: 2px solid gainsboro;
+  font-size: 35rpx;
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,64 @@
+<!--pages/submitOrderMsg/submitOrderMsg.wxml-->
+<view class="mengban" bindtap="exit">
+</view>
+<view class="big">
+  <view class="msg">
+    <!--<view class="jiange">
+      <text>个人信息</text>
+    </view>-->
+    <view class="lan">
+      <view class="line1">
+        <text>联系姓名</text>
+        <text class="value">{{data.orderPrivate.phoneNumber}}</text>
+      </view>
+      <view class="line1">
+        <text>手机号</text>
+        <text class="value">{{data.orderPrivate.phoneNumber}}</text>
+      </view>
+      <view class="line1">
+        <text>微信号</text>
+        <text class="value">{{data.orderPrivate.weChatNumber}}</text>
+      </view>
+    </view>
+    <!--<view class="jiange">
+      <text>订单信息</text>
+    </view>-->
+  </view>
+  <view class="msg">
+    <view>
+      <view class="line1">
+        <text>订单类型</text>
+        <text class="value">{{data.orderPrivate.order.orderType}}</text>
+      </view>
+      <view class="line1">
+        <text>规定时间</text>
+        <text class="value">{{data.orderPrivate.order.successTime}}</text>
+      </view>
+      <view class="line1">
+        <text>指定性别</text>
+        <text class="value">{{data.orderPrivate.order.successTime}}</text>
+      </view>
+      <view class="line1">
+        <text>订单金额</text>
+        <text class="value">{{data.orderPrivate.order.money}}</text>
+      </view>
+      <view class="line1">
+        <text>订单要求</text>
+        <text class="value value1">{{data.orderPrivate.order.content}}</text>
+      </view>
+      <view class="line1">
+        <text>订单图片</text>
+        <view class="xiang">
+          <view class="image">
+            <image mode="aspectFill" src="{{data.orderPrivate.imageUrl}}" catchtap="yulan"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <!--<view class="jiange"></view>-->
+</view>
+<view class="buttonView" hidden="{{buttonViewHide}}" animation="{{animationData}}">
+  <button class="button" bindtap="question">返回</button>
+  <button class="button return" bindtap="return1">确定发布</button>
+</view>

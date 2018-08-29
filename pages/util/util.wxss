@@ -1,0 +1,171 @@
+.tabBar {
+  display: flex;
+  justify-content: center;
+  height: 50rpx;
+  align-items: center;
+  color: white;
+  font-size: 27rpx;
+  background-color: #6ca9f9;
+  text-align: center;
+  font-weight: bold;
+  padding: 20rpx 0rpx 20rpx 0rpx;
+  position: relative;
+}
+
+.tabBar view {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.mengban {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 1500rpx;
+  background-color: grey;
+  z-index: 1;
+  opacity: 0.7;
+}
+
+.personal {
+  position: fixed;
+  z-index: 2;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  width: 80%;
+  /*padding-top: 30%;*/
+  margin: 0 auto;
+}
+
+.head1 {
+  /*width: 80%;*/
+  margin: 0 auto;
+  padding-top: 20rpx;
+  background-color: white;
+  border-radius: 7%;
+  border: 1px solid #bcbcbc;
+}
+
+.anView1 {
+  text-align: center;
+}
+
+.avatarUrlView1 {
+  margin: 0 auto;
+  background-color: #019fe9;
+  border-radius: 50%;
+  height: 150rpx;
+  width: 150rpx;
+  border: 2px solid #bcbcbc;
+  margin-bottom: 20rpx;
+}
+
+.avatarUrlView1 image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.nickName1 {
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.msg1 {
+  text-align: center;
+  display: flex;
+  margin-top: 20rpx;
+  padding-bottom: 15rpx;
+  /*border-bottom: 2px solid gainsboro;*/
+}
+
+.msg1 view {
+  width: 33%;
+}
+
+.number1 {
+  font-size: 27rpx;
+  color: #3dbefa;
+  padding-bottom: 5rpx;
+}
+
+.zi1 {
+  font-size: 33rpx;
+  font-weight: 800;
+  color: #5f5f5f;
+}
+
+.personal2 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 35rpx 25rpx 35rpx 25rpx;
+  z-index: 2;
+  background-color: white;
+  border-radius: 2%;
+  position: fixed;
+  top: 30%;
+  left: 5%;
+  right: 5%;
+}
+
+/*.head2{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}*/
+
+.avatarUrlView2 {
+  position: absolute;
+  right: 5%;
+  bottom: 15%;
+  background-color: #019fe9;
+  border-radius: 50%;
+  height: 110rpx;
+  width: 110rpx;
+  border: 2px solid #bcbcbc;
+  /*margin-left: 25%;*/
+}
+
+.avatarUrlView2 image {
+  border-radius: 50%;
+  height: 110rpx;
+  width: 110rpx;
+}
+
+.nickName2View {
+  width: 60%;
+}
+
+.nickNameIcon {
+  width: 55rpx;
+  height: 55rpx;
+  margin-right: 10rpx;
+}
+
+.nickName2 {
+  font-size: 33rpx;
+  /*font-weight: 600;*/
+  color: #5f5f5f;
+  width: 70%;
+}
+
+.schoolView {
+  margin-top: 20rpx;
+  /*height: 55rpx;*/
+  line-height: 55rpx;
+  width: 60%;
+}
+
+.schoolIcon {
+  width: 55rpx;
+  height: 55rpx;
+  margin-right: 10rpx;
+}
+
+.school {
+  font-size: 30rpx;
+  color: #bcbcbc;
+}

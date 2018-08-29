@@ -1,0 +1,14 @@
+<!--pages/shenfenValidation/shenfenValidation.wxml-->
+<view class="bigView">
+  <view class="content">
+    <view class="textView">
+      <text class="text">为保障您的代办事项能顺利进行，\n在您发布跑腿订单，需要填写一些身份信息</text>
+    </view>
+    <input type="text" placeholder="请输入您的联系姓名，如陈先生,王女士" maxlength="11" class="phoneNumber" placeholder-class="phoneNumber1" bindinput="getInput" />
+    <input type="text" placeholder="请在此处输入您的联系微信号" maxlength="20" class="phoneNumber" placeholder-class="phoneNumber1" bindinput="getWeChat"/>
+  </view>
+  <view class="tishi" class="tishi" hidden="{{hiddent}}" animation="{{animationData}}">
+    <text>{{tishi}}</text>
+  </view>
+  <button class="confirm" bindtap="confirm">下一步</button>
+</view>

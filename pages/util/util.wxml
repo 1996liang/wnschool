@@ -1,0 +1,85 @@
+<!--pages/msgMain/msgMain.wxml-->
+<template name="tabBar">
+  <view class="tabBar">
+    <view bindtap="order">订单</view>
+    <view bindtap="wallet">钱包</view>
+    <view bindtap="school">校圈</view>
+  </view>
+</template>
+
+
+<template name="personal">
+  <view class="mengban" bindtap="exit">
+  </view>
+  <view class="personal">
+    <view class="head1">
+      <view class="anView1">
+        <view class="avatarUrlView1">
+          <image src="{{orderUser.avatarUrl}}" bindtap="preview" />
+        </view>
+        <text class="nickName1">{{orderUser.nickName}}</text>
+      </view>
+      <view class="msg1">
+        <view>
+          <text class="number1">999\n</text>
+          <text class="zi1">校圈</text>
+        </view>
+        <view>
+          <text class="number1">999\n</text>
+          <text class="zi1">好评</text>
+        </view>
+        <view>
+          <text class="number1">999\n</text>
+          <text class="zi1">详情</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+
+<template name="personal2">
+  <view class="mengban" bindtap="exit">
+  </view>
+  <view class="personal2">
+    <view class="head2">
+      <view class="anView2">
+        <view class="nickName2View">
+          <image src="/image/icon/nickName.png" class="nickNameIcon" />
+          <text class="nickName2">{{schoolCircle.nickname}}</text>
+        </view>
+        <view class="avatarUrlView2">
+          <image src="{{schoolCircle.avatarurl}}" bindtap="preview" />
+        </view>
+        <view class="schoolView">
+          <image src="/image/icon/school.png" class="schoolIcon" />
+          <text class="school">{{schoolCircle.school}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>
+
+<!--<template name="selectSchool">-->
+
+<!--</template>-->
+<!--
+<view>
+  <view>2017年2月2日</view><view>2017年2月2日</view>
+ 月日时分  时往后推两个小时
+
+  <picker-view indicator-style="height: 50px;" style="width: 100%; height: 300px;" value="2" bindchange="bindChange">
+    <picker-view-column>
+      <view wx:for="{{2017}}" style="line-height: 50px">{{2017}}年</view>
+    </picker-view-column>
+     <picker-view-column>
+      <view wx:for="{{2017}}" style="line-height: 50px">{{2017}}年</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{3}}" style="line-height: 50px">{{3}}月</view>
+    </picker-view-column>
+    <picker-view-column>
+      <view wx:for="{{3}}" style="line-height: 50px">{{3}}日</view>
+    </picker-view-column>
+  </picker-view>
+</view>-->

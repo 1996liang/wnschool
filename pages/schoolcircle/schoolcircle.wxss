@@ -1,0 +1,117 @@
+page{
+    background-color: #F8F8F8;
+}
+.slide{
+    width: 100%;
+    height: 320rpx;
+    background-color: #EFF0CF;
+    border: 2px solid #E0E0E0;
+}
+.avatar{
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+    background-color: #4999FC;
+}
+.avatar image{
+    width: 90rpx;
+    height: 90rpx;
+    border-radius: 50%;
+} 
+.element{
+    position: relative;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 35rpx;
+    border-bottom: 2px solid #E1E1E1;
+}
+.msg{
+    margin-left: 30rpx;
+    width: 85%;
+}
+.nickName{
+    color: #345685;
+    font-weight: bold;
+    font-size: 30rpx;
+}
+.content{
+    font-size: 33rpx;
+    font-weight: bold;
+    color: #404141;
+}
+.msg view{
+    margin-bottom: 20rpx;
+}
+.imgs{
+    height: 400rpx;
+    width:60%;
+    background-color: #418DEB;
+}
+.imgs image{
+    height: 400rpx;
+    width:100%;
+}
+.date{
+    color: #AEABAA;
+    font-size: 25rpx;
+    font-weight: bold;
+}
+.fang{
+    /*background-color: #898484;*/
+    width: 40rpx;
+    height: 40rpx;
+    position: absolute;
+    right: 5%;
+    bottom: 0px;
+}
+image{
+    width: 40rpx;
+    height: 40rpx;
+}
+.edit{
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+}
+.edit image{
+  width: 100rpx;
+  height: 100rpx;
+  /*background-color: #F2EFEF;*/
+  box-shadow: 10rpx 10rpx 5rpx #E8E8E8;
+  border-radius: 5%;
+}
+.block1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images2 {
+  margin-right: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 10rpx;
+  width: 130rpx;
+  height: 130rpx;
+  background-color: #adadad;
+}
+
+.images2 image {
+  width: 130rpx;
+  height: 130rpx;
+}
+.tishiView{
+  margin-top:15rpx;
+  padding-bottom: 15rpx; 
+}
+.tishi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  color: #818181;
+  font-weight: bold;
+  padding-bottom: 15rpx; 
+}
+@import "/pages/util/util.wxss"

@@ -1,0 +1,70 @@
+<form bindsubmit="send">
+  <view>
+    <view class="zi1">
+      <text class="tishi">
+        您的信息我们将会用于保障您的合法权益, 且我们对外保密\n
+      </text>
+    </view>
+    <view class="name">
+      <view>
+        <text>身份证姓名</text>
+        <input type="text" maxlength="6" name="contactName" placeholder-style="font-size:28rpx;" />
+      </view>
+      <view>
+        <text>身份证号码</text>
+        <input type="text" maxlength="18" class="teshu" name="idCardNo" placeholder-style="font-size:28rpx;" />
+      </view>
+      <view>
+        <text>支付宝账户</text>
+        <input type="text" maxlength="20" name="zhifubao" placeholder-style="font-size:28rpx;" class="input" />
+      </view>
+      <view class="tishiView">
+        <text class="tishi">
+          支付宝账号用于提现所用，请正确填写
+        </text>
+      </view>
+    </view>
+    <view class="jian"></view>
+    <view class="name">
+      <view>
+        <text>学院</text>
+        <input type="text" maxlength="11" name="xueyuan" />
+      </view>
+      <view>
+        <text>班级</text>
+        <input type="number" maxlength="10" class="teshu" name="banji" />
+      </view>
+      <view>
+        <text>学号</text>
+        <input type="number" maxlength="20" name="xuehao" />
+      </view>
+    </view>
+    <view class="img" bindtap="xueshengImage" hidden="{{xueshengHidden}}">
+      <text>请上传您的学生证信息页照片</text>
+    </view>
+    <view class="img" hidden="{{!xueshengHidden}}">
+      <image src="{{xueshengImage}}"></image>
+    </view>
+    <view class="zi">
+      <text class="tishi">
+        你还需要上传一张您的身份证信息页照片，你可以直接点击提交审核，\n但是必须在24小时内补交身份证信息页，否则认证失效
+        <text style=" color: #616060;font-weight:bold;font-size:26rpx;padding-top:15rpx;margin-bottom:15rpx;" hidden="{{!imageHidden}}">点击下方</text>
+      </text>
+    </view>
+    <view hidden="{{imageHidden}}">
+      <view class="img" bindtap="shenfenImage" hidden="{{shenfenHidden}}">
+        <text>请上传您的身份证信息页照片</text>
+      </view>
+    </view>
+    <view class="img" hidden="{{!shenfenHidden}}">
+      <image src="{{shenfenImage}}"></image>
+    </view>
+    <image src="{{icon}}" class="icon" bindtap="xianshi"></image>
+    <view class="tishi1" hidden="{{hiddent}}" animation="{{animation1}}">
+      <text>{{tishi}}</text>
+    </view>
+    <view class="buttonView">
+      <button form-type="submit" class="submit">提交审核</button>
+    </view>
+  </view>
+</form>

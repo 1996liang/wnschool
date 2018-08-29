@@ -1,0 +1,26 @@
+<import src="/pages/util/util.wxml" />
+<template is="tabBar"></template>
+<view class="fang"></view>
+<view>
+  <view class="body">
+  <block wx:for="{{data}}">
+    <view class="element">
+      <view class="date">
+        <text class="day">4-30\n</text>
+        <text class="time">{{item[0]}}</text>
+      </view>
+      <view class="tishi1">
+        <block wx:for="{{item[1]}}">
+          <view class="tishi">
+            <view class="li"></view>
+            <text>{{item}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+  </view>
+  <view class="buttonView">
+      <button class="button" bindtap="return1">返回</button>
+  </view>
+</view>

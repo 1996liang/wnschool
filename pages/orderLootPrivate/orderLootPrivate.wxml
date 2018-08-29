@@ -1,0 +1,101 @@
+<!--pages/orderLootPrivate/orderLootPrivate.wxml-->
+<view>
+  <view class="head">
+    <view class="avatar" bindtap="personal">
+      <image src="{{data.user.avatarUrl}}" />
+    </view>
+    <view class="headmsg">
+      <view class="nickName">
+        <text>{{data.user.nickName}}</text>
+      </view>
+      <image src="{{data.user.gender}}" class="gender" />
+      <view class="school">
+        <image src="/image/icon/address.png" />
+        <text>{{data.user.school}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="msg">
+    <view class="first">
+      <text>订单量</text>
+      <text class="value">{{data.count[1]}}</text>
+    </view>
+    <view class="line">
+      <text>好评率</text>
+      <text class="value">{{data.count[0]}} %</text>
+    </view>
+    <view class="jiange"></view>
+    <view class="line1">
+      <text>手机号</text>
+      <text class="value">{{data.user.phoneNumber}}</text>
+      <button bindtap="call">拨打</button>
+    </view>
+    <view class="line1">
+      <text>微信号</text>
+      <text class="value">{{data.user.weChatNumber}}</text>
+      <button bindtap="copy">复制</button>
+    </view>
+    <view class="evaluate" catchtap="lootEvaluate">
+      <text>他的评价</text>
+      <image src="/image/icon/jiantou.png" class="jiantou" />
+    </view>
+    <view class="jiange"></view>
+  </view>
+  <view class="reply">
+    <view></view>
+    <text>留言板</text>
+  </view>
+  <view class="talk">
+    <!--<block wx:for="{{ni}}" wx:for-index="niIndex" wx:for-item="niItem">
+      <block wx:for="{{wo}}" wx:for-index="woIndex" wx:for-item="woItem">
+        <view class="qiaoqiaohua">
+          <view class="avatarUrl">
+            <image src="{{data.user.avatarUrl}}" />
+          </view>
+          <view class="jianjiao"></view>
+          <view class="yuju">
+            <text>{{niItem.content}}</text>
+          </view>
+        </view>
+        <view class="woqiaoqiaohua">
+          <view class="yuju">
+            <text>{{woItem.content}}</text>
+          </view>
+          <view class="jianjiao1"></view>
+          <view class="avatarUrl">
+            <image src="{{userInfo.avatarUrl}}" />
+          </view>
+        </view>
+      </block>
+    </block>-->
+        <block wx:for="{{msg}}">
+        <view class="qiaoqiaohua" wx:if="{{item.lootId!=null}}">
+          <view class="avatarUrl">
+            <image src="{{data.user.avatarUrl}}" />
+          </view>
+          <view class="jianjiao"></view>
+          <view class="yuju">
+            <text>{{item.content}}</text>
+          </view>
+        </view>
+        <view class="woqiaoqiaohua" wx:else>
+          <view class="yuju">
+            <text>{{item.content}}</text>
+          </view>
+          <view class="jianjiao1"></view>
+          <view class="avatarUrl">
+            <image src="{{userInfo.avatarUrl}}" />
+          </view>
+        </view>
+    </block>
+  </view>
+  <view class="inputView" hidden="{{inputViewHide}}" animation="{{animationData}}">
+    <image src="/image/icon/houtui.png" bindtap="question"></image>
+    <textarea auto-height bindinput="getInput" value="{{inputValue}}" />
+    <button class="send" bindtap="send">回复</button>
+  </view>
+  <view class="buttonView" hidden="{{buttonViewHide}}" animation="{{animationData}}">
+    <button class="button" bindtap="question">询问</button>
+    <button class="button return" bindtap="return1">返回</button>
+  </view>
+</view>

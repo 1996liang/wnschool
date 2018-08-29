@@ -1,0 +1,92 @@
+<!--pages/submitOrder/submitOrder.wxml-->
+<view catchtap="clickPage">
+  <form bindsubmit="send" report-submit="true">
+    <view class="element">
+      <view>
+        <text>联系人</text>
+        <input type="text" name="contactName" value="{{contactName}}" bindfocus="jujiao"/>
+      </view>
+      <view>
+        <text>手机</text>
+        <input type="text" name="phoneNumber" value="{{phoneNumber}}" bindfocus="jujiao"/>
+      </view>
+      <view>
+        <text>微信号</text>
+        <input type="text" name="weChatNumber" value="{{weChatNumber}}" bindfocus="jujiao"/>
+      </view>
+    </view>
+    <view class="orderView">
+      <view class="type2">
+        <text>订单类型</text>
+        <input type="text" disabled="true" class="typeInput" catchtap="clickType" value="{{typeValue}}" name="orderType" />
+        <image src="{{icon}}" class="selectIcon" catchtap="clickType"></image>
+      </view>
+      <scroll-view class="selectView" scroll-y style="" hidden="{{hidden}}">
+        <view>
+          <radio-group class="select" hidden="{{hidden}}" bindchange="getRadio">
+            <label wx:for="{{items}}">
+              <radio value="{{item.name}}" />{{item.value}}
+            </label>
+          </radio-group>
+        </view>
+      </scroll-view>
+      <view class="timeView">
+        <text>规定时间</text>
+        <input type="text" disabled="true" class="timeInput" value="{{inputValue}}" catchtap="clickTime" name="successTime" />
+        <image src="{{timeViewIcon}}" class="selectIcon1" catchtap="clickTime"></image>
+      </view>
+      <view>
+        <text>佣金</text>
+        <input type="number" name="money" bindfocus="jujiao"/>
+      </view>
+      <view>
+        <text>指定性别</text>
+        <radio-group class="sex" name="sex">
+          <label>
+            <radio value="notkonwn" checked="true" />不限
+          </label>
+          <label>
+            <radio value="boy" />男生
+          </label>
+          <label>
+            <radio value="girl" />女生
+          </label>
+        </radio-group>
+      </view>
+      <view>
+        <text>订单要求</text>
+        <textarea name="content" bindfocus="jujiao"/>
+      </view>
+      <view class="primary">
+        <text>悄悄话</text>
+        <textarea name="privateTalk" bindfocus="jujiao"/>
+      </view>
+    </view>
+    <view class="element imageBig">
+      <view class="imageView" bindtap="upload">
+        <image src="{{image}}" mode="aspectFill" hidden="{{imageHidden}}" catchtap="yulan"></image>
+        <text hidden="{{!imageHidden}}">请在此处上传与订单相关相片截图\n 如快递领取提示短信截图等
+        </text>
+      </view>
+    </view>
+    <view class="btnView">
+      <button class="cancel" bindtap="cancel">取消</button>
+      <button class="send" formType="submit">发送</button>
+    </view>
+
+    <picker-view indicator-style="height: 50px;" class="picker" value="{{value}}" bindchange="getValue" hidden="{{timeHidden}}">
+      <picker-view-column>
+        <view wx:for="{{months}}" style="line-height: 50px">{{item}}月</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{days}}" style="line-height: 50px">{{item}}日</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{hours}}" style="line-height: 50px">{{item}}时</view>
+      </picker-view-column>
+      <picker-view-column>
+        <view wx:for="{{minutes}}" style="line-height: 50px">{{item}}分</view>
+      </picker-view-column>
+    </picker-view>
+  </form>
+</view>

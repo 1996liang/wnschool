@@ -1,0 +1,29 @@
+<view>
+    <view class="head">
+      <view>
+        <text>￥</text>
+        <text>{{balance}}</text>
+      </view>
+    </view>
+    <view class="body">
+        <block wx:for="{{data}}">
+        <view class="xuanxiang">
+            <view class="dateView">
+                <text class="day">{{item.createTime[0]}}\n</text>
+                <text class="minute">{{item.createTime[1]}}</text>
+            </view>
+            <view class="avatarUrl">
+              <image src="{{item.avatarUrl}}"></image>
+            </view>
+            <view class="msgView">
+                <text class="money">{{item.cashFlow}}.00\n</text>
+                <text class="msg">{{item.msg}}</text>
+            </view>
+        </view>
+        </block>
+    </view>
+    <view class="btn">
+        <button class="return" bindtap="returnMy">返回</button>
+        <button class="deposit" bindtap="withdraw">提现</button>
+    </view>
+</view>

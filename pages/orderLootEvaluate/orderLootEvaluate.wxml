@@ -1,0 +1,51 @@
+<!--pages/orderLootEvaluate/orderLootEvaluate.wxml-->
+<view>
+  <view class="head">
+    <view class="avatar" bindtap="personal">
+      <image src="{{user.avatarUrl}}" />
+    </view>
+    <view class="headmsg">
+      <view class="nickName">
+        <text>{{user.nickName}}</text>
+      </view>
+      <image src="{{user.gender}}" class="gender"/>
+      <view class="school">
+        <image src="/image/icon/address.png" />
+        <text>{{user.schoool}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="block">
+    <block wx:for="{{data}}">
+      <view class="Evaluate">
+        <view class="EvaluateHead">
+          <view class="evaluateAvatar" bindtap="personal">
+            <image src="{{item.avatarUrl}}" />
+          </view>
+          <view class="evaluateHeadmsg">
+            <view class="evaluateNickName">
+              <text>******</text>
+            </view>
+            <view class="date">
+              <text>{{item.createTime}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="content">
+          <text>{{item.content}}</text>
+        </view>
+        <view class="star">
+          <block wx:for="{{item.lightCycle}}">
+            <image src="{{starLightImage}}" bindtap="star" data-star="light-{{index}}"></image>
+          </block>
+          <block wx:for="{{item.emptyCycle}}">
+            <image src="{{starImage}}" bindtap="star" data-star="empty-{{index}}"></image>
+          </block>
+        </view>
+      </view>
+    </block>
+  </view>
+  <view class="buttonView">
+    <button class="button return" bindtap="return1">返回</button>
+  </view>
+</view>

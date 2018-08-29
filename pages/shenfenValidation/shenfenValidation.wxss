@@ -1,0 +1,86 @@
+/* pages/shenfenValidation/shenfenValidation.wxss */
+.bigView{
+  padding-top: 170rpx;
+}
+.text {
+  font-size: 28rpx;
+  font-weight: 600;
+  line-height: 180%;
+  letter-spacing: 2rpx;
+}
+.textView{
+  text-align: center;
+}
+.content .phoneNumber {
+  margin: 0 auto;
+  border: 2px solid #ccc;
+  width: 85%;
+  padding: 7rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+.phoneNumber1{
+    text-align: center;
+    color: #DADADA;
+    font-size: 30rpx;
+  font-weight: 600;
+}
+.idCode {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.idCode button {
+  width: 45%;
+  border-radius: 0% 0% 0% 0%;
+  border:  2px solid #ccc;
+  background-color: #65abf3;
+  color: white;
+  font-size: 30rpx;
+  margin: 0 auto;
+}
+.idCode input{
+  border: 2px solid #ccc;
+   width: 45%;
+   margin:0 auto;
+   padding: 10rpx;
+}
+
+.confirm {
+  position: absolute;
+  align-content: center;
+  justify-content: center;
+  bottom: 0px;
+  width: 100%;
+  border-radius: 0% 0% 0% 0%;
+  background-color: #65abf3;
+  color: white;
+  font-weight: 600;
+  font-size: 35rpx;
+  padding: 1rpx;
+}
+
+.tishi {
+  width: 35%;
+  background-color: #E2E2E2;
+  border-radius: 5%;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30rpx;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  right: 35%;
+}
+
+.name{
+  border: 2px solid #ccc;
+   width: 45%;
+   
+   padding: 10rpx;
+}

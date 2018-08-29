@@ -1,0 +1,20 @@
+<view class="bigView">
+  <textarea placeholder="要说点什么好呢......" placeholder-class="textarea" class="textarea1" bindinput="getMsg" bindblur="getMsg" bindfocus="getMsg" bindconfirm="getMsg"/>
+  <view class="images">
+    <block wx:for="{{images}}">
+      <view class="image">
+        <image src="{{item}}" hidden="{{imageHidden}}"></image>
+      </view>
+    </block>
+    <view class="imageAdd" bindtap="addImage" hidden="{{finish}}">
+      <canvas canvas-id="addCanvas" class="addCanvas" />
+    </view>
+  </view>
+    <view class="tishi" class="tishi" hidden="{{hiddent}}" animation="{{animation1}}">
+    <text>{{tishi}}</text>
+  </view>
+  <view class="btnView">
+    <button class="cancel" bindtap="cancel">取消</button>
+    <button class="send" bindtap="send">发送</button>
+  </view>
+</view>

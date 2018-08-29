@@ -1,0 +1,81 @@
+<!--pages/run/run.wxml-->
+<import src="/pages/util/util.wxml" />
+<view hidden="{{personal}}">
+  <template is="personal" data="{{orderUser}}"></template>
+</view>
+<!--<include src="/pages/util/util.wxml"/>-->
+<!--<view>
+  <template is="selectSchool"  data="{{selectSchoolHidden,schoolData,value}}"></template>
+</view>-->
+<view>
+  <swiper autoplay="true" interval="5000" duration="500" indicator-dots="true">
+    <swiper-item>
+      <image src="/image/icon/edit.png" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/icon/edit.png" />
+    </swiper-item>
+    <swiper-item>
+      <image src="/image/icon/edit.png" />
+    </swiper-item>
+  </swiper>
+  <view class="button">
+    <view class="my" bindtap="orderManager">
+      <text>我的订单</text>
+    </view>
+    <view class="submit" bindtap="submitOrder">
+      <text>发布订单</text>
+    </view>
+  </view>
+  <block wx:for="{{element}}">
+    <view class="element" bindtap="detail" data-id="{{item[0].id}}">
+      <!--<view class="typeAndMoney" style=" background-color :{{item[1].color}};">-->
+      <view class="typeAndMoney">
+        <view class="orderType">
+          <text>{{item[0].orderType}}
+          </text>
+        </view>
+        <view class="money">
+          <text>￥{{item[0].money}}</text>
+        </view>
+      </view>
+      <view class="head">
+        <view class="avatar" catchtap="personal" data-user="{{item[1]}}">
+          <image src="{{item[1].avatarUrl}}" />
+        </view>
+        <view class="msg">
+          <view class="nickName">
+            <text>{{item[1].nickName}}
+            </text>
+          </view>
+          <view class="content">
+            <text>{{item[0].content}}.</text>
+          </view>
+        </view>
+      </view>
+      <view class="date">
+        <text>{{item[0].createTime}}</text>
+      </view>
+      <view class="imageStatus">
+        <image src="{{item[0].status}}" hidden="{{status}}" />
+      </view>
+      <view class="xinxi">
+        <view>
+          <image src="/image/icon/successTime.png"></image>
+          <text class="biaoti">规定时间</text>
+          <text>{{item[0].successTime}}</text>
+        </view>
+        <view>
+          <image src="/image/icon/sex.png"></image>
+          <text class="biaoti">指定性别</text>
+          <text>{{item[0].sex}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+  <view hidden="{{tishi}}" class="tishiView">
+    <text class="tishi">
+      {{tishiText}}
+    </text>
+  </view>
+</view>

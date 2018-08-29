@@ -1,0 +1,25 @@
+<import src="/pages/util/util.wxml" />
+<template is="tabBar"></template>
+<view class="fang"></view>
+<view class="body">
+  <view class="body">
+        <block wx:for="{{data}}">
+        <view class="xuanxiang">
+            <view class="dateView">
+                <text class="day">{{item.createTime[0]}}\n</text>
+                <text class="minute">{{item.createTime[1]}}</text>
+            </view>
+            <view class="avatarUrl">
+              <image src="{{item.avatarUrl}}"></image>
+            </view>
+            <view class="msgView">
+                <text class="money">{{item.cashFlow}}.00\n</text>
+                <text class="msg">{{item.msg}}</text>
+            </view>
+        </view>
+        </block>
+    </view>
+    <view class="buttonView">
+      <button class="button" bindtap="return1">返回</button>
+  </view>
+</view>

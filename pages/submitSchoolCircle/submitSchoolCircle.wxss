@@ -1,0 +1,96 @@
+/* pages/submitSchoolCircle/submitSchoolCircle.wxss */
+
+page {
+  background-color: #f8f8f8;
+}
+
+.image {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #c9c9c9;
+  background-color: white;
+  margin: 35rpx 0rpx 0rpx 45rpx;
+}
+
+.image image {
+  width: 60px;
+  height: 60px;
+}
+
+.addCanvas {
+  width: 60px;
+  height: 60px;
+}
+
+.imageAdd {
+  width: 60px;
+  height: 60px;
+  border: 2px solid #c9c9c9;
+  background-color: white;
+  margin: 35rpx 0rpx 0rpx 45rpx;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 150rpx;
+}
+
+.textarea {
+  color: #c1c1c1;
+  font-size: 35rpx;
+}
+
+.textarea1 {
+  background-color: white;
+  margin: 0 auto;
+  width: 90%;
+  height: 400rpx;
+  border-bottom: 2px solid #c1c1c1;
+  border-top: 2px solid #c1c1c1;
+  padding: 35rpx 45rpx 35rpx 45rpx;
+}
+
+.btnView {
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  width: 100%;
+  font-size: 35rpx;
+  border-radius: 0px;
+}
+
+.btnView .cancel {
+  width: 30%;
+  border-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 5rpx;
+  font-weight: 600;
+  border: 1px solid #c9c9c9;
+}
+
+.btnView .send {
+  width: 70%;
+  border-radius: 0px;
+  padding: 5rpx;
+  background-color: #418deb;
+  color: white;
+  font-weight: 600;
+  border: 1px solid #c9c9c9;
+}
+.tishi {
+  width: 35%;
+  background-color: #E2E2E2;
+  border-radius: 5%;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30rpx;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0%;
+  left: 35%;
+  right: 35%;
+}

@@ -1,0 +1,65 @@
+<view>
+  <view class="head">
+    <view class="anView">
+      <view class="avatarUrlView">
+          <image src="{{userInfo.avatarUrl}}" />
+      </view>
+      <text class="nickName">{{userInfo.nickName}}</text>
+    </view>
+    <view class="msg">
+      <view>
+        <text class="number">{{count.schoolCount}}\n</text>
+        <text class="zi">校圈</text>
+      </view>
+      <view>
+        <text class="number">{{count.lootCount}}\n</text>
+        <text class="zi">结单</text>
+      </view>
+      <view>
+        <text class="number">{{count.hostCount}}\n</text>
+        <text class="zi">发单</text>
+      </view>
+    </view>
+  </view>
+  <view>
+    <view class="xuanxiang" bindtap="orderManager">
+      <view class="images">
+        <image src="/image/icon/orderManager.png"></image>
+      </view>
+      <text>订单管理</text>
+      <image src="/image/icon/jiantou.png" class="jiantou"/>
+    </view>
+    <view class="xuanxiang" bindtap="msg">
+      <view class="images">
+        <image src="/image/icon/msg.png"></image>
+      </view>
+      <text>信息详情</text>
+     <image src="/image/icon/jiantou.png" class="jiantou"/>
+    </view>
+    <view class="xuanxiang" bindtap="qianbao">
+      <view class="images">
+        <image src="/image/icon/qianbao.png"></image>
+      </view>
+      <text>钱包</text>
+      <image src="/image/icon/jiantou.png"  class="jiantou"/>
+    </view>
+    <view class="xuanxiang" bindtap="validation">
+      <view class="images">
+        <image src="/image/icon/validation.png"></image>
+      </view>
+      <text>实名认证</text>
+      <image src="/image/icon/jiantou.png"  class="jiantou"/>
+    </view>
+    <view class="xuanxiang" bindtap="we">
+      <view class="images">
+        <image src="/image/icon/we.png"></image>
+      </view>
+      <text>关于我们</text>
+      <image src="/image/icon/jiantou.png" class="jiantou"/>
+    </view>
+  </view>
+  <view class="contact">
+    <contact-button type="default-light" size="40" session-from="weapp">
+    </contact-button>
+  </view>
+</view>

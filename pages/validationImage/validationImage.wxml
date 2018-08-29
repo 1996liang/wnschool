@@ -1,0 +1,15 @@
+<!--pages/validationImage/validationImage.wxml-->
+<view class="zi1">
+      <text class="tishi">
+        你还缺一张{{zi}}信息页没有上传
+      </text>
+    </view>
+  <view class="img" bindtap="Image" hidden="{{Hidden}}">
+      <text>请上传您的{{zi}}信息页</text>
+    </view>
+    <view class="img" hidden="{{!Hidden}}">
+      <image src="{{Image}}"></image>
+    </view>
+     <view class="buttonView">
+      <button bindtap="submit" class="submit">提交审核</button>
+    </view>

@@ -1,0 +1,9 @@
+<!--pages/guanyuwomen/guanyuwomen.wxml-->
+<view>
+  <view class="head">
+    <image src="/image/icon/wannengxiaoyuan.jpg"></image>
+  </view>
+  <view class="buttonView">
+    <button class="button" bindtap="return1">返回</button>
+  </view>
+</view>

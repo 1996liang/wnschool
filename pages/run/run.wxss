@@ -1,0 +1,224 @@
+/* pages/run/run.wxss */
+
+page {
+  background-color: #f8f8f8;
+  z-index: 0;
+}
+
+swiper view {
+  background-color: pink;
+  width: 100%;
+  height: 350rpx;
+}
+
+swiper {
+  height: 350rpx;
+}
+
+.button {
+  display: flex;
+  width: 100%;
+  height: 100rpx;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+}
+
+.my {
+  text-align: center;
+  width: 50%;
+  background-color: #15222b;
+  color: white;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.submit {
+  text-align: center;
+  width: 50%;
+  background-color:#3598DB;
+  color: white;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.element {
+  /*margin-top: 30rpx;*/
+  /*padding-bottom: 50rpx;*/
+  width: 100%;
+  border: 2px solid gainsboro;
+  /*border-radius: 5%;*/
+  position: relative;
+  margin-bottom: 15rpx;
+  background-color: white;
+}
+
+.head {
+  display: flex;
+  width: 80%;
+  padding-top: 15rpx;
+}
+
+.avatar {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  background-color: #4999fc;
+  margin-left: 30rpx;
+}
+
+.avatar image {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nickName {
+  /*margin-left: 20rpx;*/
+}
+
+.nickName text {
+  color: #345685;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.orderType{
+    margin-left: 30rpx;
+  /*margin-top: 35rpx;*/
+  /*margin-bottom: 25rpx;*/
+   color: #FEFEFE;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.msg {
+  /*margin: 0 auto;*/
+  margin-left: 5%;
+  width: 80%;
+  position: relative;
+}
+
+.place {
+  margin-bottom: 15rpx;
+}
+
+.place text {
+  color: #62a5f7;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+
+.content {
+  color: #919191;
+  font-size: 30rpx;
+  font-weight: bold;
+  letter-spacing: 2rpx;
+  margin-top: 20rpx;
+  /*margin-left: 30rpx;
+  mmargin-bottom: 15rpx;*/
+}
+
+.date {
+  position: absolute;
+  right: 5%;
+  bottom: 25%;
+}
+
+.date text {
+  color: #919191;
+  font-size: 25rpx;
+}
+.typeAndMoney{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15rpx;
+  padding-bottom: 15rpx;
+  /*border-radius: 5%;*/
+  /*border-bottom: 2px solid #DEDDDD;*/
+  margin-bottom: 20rpx;
+  background-color :#D2D2D2;
+}
+.money {
+  /*width: 100rpx;
+  height: 60rpx;*/
+  /*position: absolute;
+  right: 3%;
+  top: 10%;*/
+  font-size: 40rpx;
+  font-weight: bolder;
+  color:#E74C3C;
+  z-index: 0;
+  margin-right: 3%;
+  /*transform:skew(-30deg);  
+  -webkit-transform: skew(-5deg);   
+  -moz-transform: skew(-111deg);  
+  background-color: red;  
+   margin: 50px auto; */
+}
+
+/*.money canvas {
+  width: 100%;
+  height: 60rpx;
+  display: block;
+  z-index: 0;
+}*/
+
+.imageStatus {
+  position: absolute;
+  right: 2%;
+  top: 25%;
+}
+
+.imageStatus image {
+  width: 70px;
+  height: 53.9px;
+}
+
+.xinxi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 55rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  border-top: 2px solid #E0E0E0;
+}
+
+.xinxi view {
+  width: 50%;
+  /*height: 50rpx;*/
+  display: flex;
+  line-height: 50rpx;
+  justify-content: center;
+  align-items: center;
+  /*border: 1px solid #DEDDDD;*/
+  font-size: 26rpx;
+  color: #9B9B9B;
+}
+.xinxi image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.xinxi .biaoti{
+  color: #726E6E;
+  font-weight: bold;
+  margin-right: 25rpx;
+}
+.tishiView{
+  margin-top:15rpx;
+  padding-bottom: 15rpx; 
+}
+.tishi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26rpx;
+  height: 24rpx;
+  line-height: 24rpx;
+  color: #818181;
+  font-weight: bold;
+    padding-bottom: 15rpx; 
+}
+@import "/pages/util/util.wxss"

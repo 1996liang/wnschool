@@ -1,0 +1,191 @@
+/* pages/orderLootEvaluate/orderLootEvaluate.wxss */
+
+.head {
+  display: flex;
+  width: 100%;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  padding-bottom: 20rpx;
+}
+
+.avatar {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  /*background-color: #4999fc;*/
+  margin-left: 25rpx;
+  margin-top: 20rpx;
+  position: relative;
+}
+
+.avatar image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.gender{
+  width: 35rpx;
+  height: 35rpx;
+  position: absolute;
+  left: -2%;
+  bottom: -12%;
+}
+.nickName {
+  margin-left: 50rpx;
+  margin-top: 25rpx;
+}
+
+.nickName text {
+  color: #333;
+  font-size: 35rpx;
+  font-weight: bold;
+}
+
+.headmsg {
+  width: 80%;
+  position: relative;
+}
+
+.school {
+  margin-top: 10rpx;
+  margin-left: 40rpx;
+}
+
+.school image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 5rpx;
+}
+
+.school text {
+  margin-left: 10rpx;
+  font-size: 25rpx;
+  color: #5e5e5e;
+}
+
+.Evaluate {
+  border-bottom: 1px solid #dcdbdb;
+  border-top: 1px solid #dcdbdb;
+  padding-bottom: 10rpx;
+  padding-top: 15rpx;
+}
+
+.EvaluateHead {
+  display: flex;
+  width: 100%;
+}
+
+.evaluateAvatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  /*background-color: #4999fc;*/
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.evaluateAvatar image {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+
+.evaluateNickName {
+  margin-left: 25rpx;
+  margin-top: 15rpx;
+}
+
+.evaluateNickName text {
+  color: #545454;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+
+.evaluateHeadmsg {
+  width: 80%;
+  position: relative;
+}
+
+.date {
+  /*margin-top: rpx;*/
+  margin-left: 23rpx;
+}
+
+.date text {
+  margin-left: 10rpx;
+  font-size: 23rpx;
+  color: #b2b2b2;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  background-color: #f2f2f2;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-right: 20rpx;
+  margin-top: 10rpx;
+  margin-bottom: 20rpx;
+  border-bottom: 1px solid #dcdcdc;
+  border-radius: 3%;
+}
+
+.content text {
+  width: 90%;
+  font-size: 26rpx;
+  letter-spacing: 1.5px;
+  color: #707070;
+  font-weight: bold;
+  margin-left: 3%;
+}
+
+.star {
+  /*margin-bottom: 35rpx;*/
+  width: 90%;
+  margin: 0 auto;
+}
+
+image {
+  width: 35rpx;
+  padding: 0px 4rpx 0px 4rpx;
+  height: 35rpx;
+}
+
+.block{
+  padding-bottom: 110rpx;
+}
+
+.buttonView {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #c0c0c0;
+  padding-top: 15rpx;
+  background-color: white;
+  padding-bottom: 15rpx;
+}
+
+.button {
+  padding-left: 45rpx;
+  padding-right: 45rpx;
+  font-size: 30rpx;
+  border: 1px solid #dadada;
+  background-color: white;
+  color: #888;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}
+
+.return {
+  color: #6ca9f9;
+  border: 1px solid #6ca9f9;
+}

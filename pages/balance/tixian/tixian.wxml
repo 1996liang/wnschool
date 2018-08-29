@@ -1,0 +1,14 @@
+<view class="table">
+  <view class="type1">
+      <text class="typeText">提现方式</text>
+      <text class="typeText1">支付宝提现</text>
+  </view>
+  <view class="money">
+    <text class="typeText1">提现金额</text>
+    <input type="number" placeholder-class="i" class="moneyInput" bindinput="getMsg" value="{{value}}"/>
+  </view>
+  <view class="text1">
+    可用余额 {{balance}} 元,<text class="quanbu" bindtap="jine"> 全部提现 </text>
+  </view>
+</view>
+<button type="primary" bindtap="send">提现</button>
